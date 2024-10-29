@@ -1,9 +1,52 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f5f0e1; /* Light beige background */
     margin: 0;
     padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #d6cfc4; /* Beige */
+    padding: 15px;
+    list-style: none;
+}
+
+.navbar li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #5c4a3a; /* Dark brown */
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: #c2b59f; /* Lighter beige */
+    border-radius: 5px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #d6cfc4; /* Beige */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown li {
+    width: 150px;
+}
+
+.navbar li:hover .dropdown {
+    display: block;
 }
 
 .container {
@@ -20,12 +63,19 @@ header {
     margin-bottom: 20px;
 }
 
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #5c4a3a; /* Dark brown border */
+}
+
 h1 {
-    color: #333;
+    color: #5c4a3a; /* Dark brown */
 }
 
 h2 {
-    color: #555;
+    color: #4a3d3c; /* Slightly darker brown */
 }
 
 .bio, .skills {
@@ -38,7 +88,7 @@ ul {
 }
 
 ul li {
-    background: #e2e2e2;
+    background: #e2d6c3; /* Soft beige for skills */
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
@@ -50,7 +100,7 @@ footer {
 }
 
 footer a {
-    color: #007BFF;
+    color: #5c4a3a; /* Dark brown */
     text-decoration: none;
 }
 
